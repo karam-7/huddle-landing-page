@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 1340px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ======================== Star Main Area ================ */
+
+.site{
+    margin-top: 50px;
+    padding: 30px 80px;
+}
+
+  /* ===================== Start Section Area =================== */
+
+.hud{
+    display: flex;
+    margin-top: 50px;
+    gap: 80px;
+}
+
+.main-img{
+    width: 650px;
+}
+
+.info{
+    width: 460px;
+}
+
+.info-h1{
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 50px;
+    font-style: normal;
+    font-family: 'Poppins';
+    color: white;
+}
+
+.info-para{
+    margin-top: 20px;
+    font-size: 1.15rem;
+    color: white;
+    font-style: normal;
+    font-weight: 400; 
+}
+
+.btn{
+    margin-top: 50px;
+    padding: 15px 20px;
+    border-radius: 20px;
+    width: 35%;
+    border: none;
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    font-size: 1.2rem;
+    cursor: pointer;
+    /* box-shadow: 5px 10px hsla(223, 100%, 88%, 0.61); */
+}
+
+.btn:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+  /* ===================== End Section Area =================== */
+
+.social{
+    float: right;
+}
+
+.icon{
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid white;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.icon:hover{
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+}
+
+ /* ======================== End Main Area ================ */
+
+/* ======================== START Footer Area ================ */
+
+.foot {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: hsl(257, 40%, 49%);
+    justify-content: center;
+    background-color: black;
+    padding: 5px;
+    margin-top: 70px;
+  }
+  
+.foot a {
+    color: hsl(300, 69%, 71%);
+    text-decoration: none;
+}
+
+.foot a:hover{
+    color: white;
+}
+  
+  
+  /* ======================== End Footer Area ================ */
+  
+  /* ======================== Start Media Querry Area ================ */
+
+@media screen and (max-width: 768px){
+    body{
+        min-width: fit-content;
+    }
+
+    .site{
+        margin-top: 20px;
+    }
+
+    .logo{
+        width: 40%;
+    }
+
+    .hud{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info{
+        margin-left: 80px;
+    }
+
+    .btn{
+        width: 250px;
+    }
+
+    .social{
+        float: none;
+        text-align: center;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 380px){
+    body{
+        min-width: 380px;
+        background-image: url(./images/bg-mobile.svg);
+    }
+
+    .site{
+        padding: 30px 20px;
+    }
+
+    .info-h1{
+        font-size: 1.7rem;
+        line-height: 35px;
+        font-weight: 400;
+    }
+
+
+    .main-img{
+        width: 350px;
+    }
+
+    .info{
+        width: 350px;
+        margin-left: auto;
+    }
+}
+
+  /* ======================== End Media Querry Area ================ */
